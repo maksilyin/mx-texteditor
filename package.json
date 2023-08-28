@@ -1,0 +1,39 @@
+{
+  "name": "mx-text-editor",
+  "private": false,
+  "version": "0.1.2",
+  "type": "module",
+  "main": "./dist/mx-text-editor.umd.js",
+  "module": "./dist/mx-text-editor.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/mx-text-editor.es.js",
+      "require": "./dist/mx-text-editor.umd.js"
+    },
+    "./dist/style.css": "./dist/style.css"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "-": "0.0.1",
+    "axios": "^1.4.0",
+    "core-js": "^3.8.3",
+    "pug": "^3.0.2",
+    "pug-html-loader": "^1.1.5",
+    "pug-plain-loader": "^1.1.0",
+    "rangy": "^1.3.1",
+    "sass": "^1.62.1",
+    "sass-loader": "^13.2.2",
+    "vue": "^3.2.13",
+    "vue-contenteditable": "^4.1.0",
+    "vuedraggable": "^4.1.0",
+    "vuex": "^4.1.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.2.3",
+    "vite": "^4.4.5"
+  }
+}
